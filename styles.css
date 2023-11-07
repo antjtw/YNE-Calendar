@@ -4,6 +4,8 @@ body {
 }
 
 .calendar-grid {
+    max-width: 1280px;
+    margin: 0 auto;
     display: grid;
     gap: 16px; /* 24px padding between calendar items */
     padding: 32px;
@@ -65,15 +67,14 @@ body {
 
 /* Add styles for the grid wrapping here if needed */
 
-/* Media query for screens between 601px and 959px (tablet) */
-@media (min-width: 601px) and (max-width: 959px) {
-    .calendar-grid {
-        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Two items per row on tablet */
-    }
-}
-
 /* Media query for screens up to 600px (mobile) */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+    /* Remove the fixed width and center alignment for mobile */
+    .calendar-grid {
+        max-width: none;
+        margin: 0;
+    }
+
     .calendar-grid {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* One item per row on mobile */
         padding: 12px;
