@@ -252,7 +252,13 @@ img {
         padding: 12px;
     }
 
-    fed-logo img {
+    .fed-logo img {
         display: none; /* Hide the fed-logo on mobile */
     }
+
+    .fed-logo {
+        display: none;
+    }
+
+
 }
