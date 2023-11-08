@@ -59,6 +59,15 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); /* Three items per row on desktop */
 }
 
+img {
+    width: 240px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it's a block element to center it horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
 .calendar-item {
     padding-left: 20px;
     padding-right: 20px;
@@ -158,6 +167,7 @@ body {
     margin: 16px auto; /* Center align the text and set vertical margin */
     text-align: center;
     max-width: 1280px; /* Set a maximum width */
+    padding: 12px;
 }
 
 .page-heading {
@@ -185,6 +195,10 @@ body {
     .calendar-grid {
         max-width: none;
         margin: 0;
+    }
+
+    img {
+        width: 180px; /* Adjust the width for mobile */
     }
 
     .calendar-grid {
