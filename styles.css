@@ -252,7 +252,7 @@ img {
         padding: 12px;
     }
 
-    fed-logo {
+    fed-logo img {
         display: none; /* Hide the fed-logo on mobile */
     }
 }
