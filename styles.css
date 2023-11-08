@@ -3,6 +3,53 @@ body {
     background-color: #203F5B; /* Medium blue background for the entire page */
 }
 
+@font-face {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-style: normal;
+    src: url('fonts/Inter-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-style: normal;
+    src: url('fonts/Inter-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #203F5B; /* Medium blue background for the entire page */
+}
+
 .calendar-grid {
     max-width: 1280px;
     margin: 0 auto;
@@ -32,6 +79,7 @@ body {
 .competition-name {
     font-size: 20px;
     line-height: 28px;
+    font-weight: 700;
     margin-top: 4px;
     color: #fff;
     font-weight:600;
@@ -65,6 +113,70 @@ body {
     border-left: 3px solid #FFDA53; /* Red border color for the custom item */
 }
 
+/* Primary Button (Enter) */
+.button.enter-button {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #203F5B;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button.enter-button:hover {
+    background-color: #ccc; /* Gray background on hover */
+}
+
+.button.volunteer-button {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: none;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.5s;
+}
+
+.button.volunteer-button:hover {
+    background-color: #314E74; /* White background with 60% opacity on hover */
+    color: #fff; /* White text (100% opacity) on hover */
+}
+
+.additional-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    margin: 16px auto; /* Center align the text and set vertical margin */
+    text-align: center;
+    max-width: 1280px; /* Set a maximum width */
+}
+
+.page-heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #fff;
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto; /* Center align horizontally by using margin auto */
+}
+
+.outlined-text {
+    font-size: 48px;
+    line-height: 56px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff; /* Add a 2px white stroke */
+    text-stroke: 2px #fff; /* Add a 2px white stroke */
+}
 /* Add styles for the grid wrapping here if needed */
 
 /* Media query for screens up to 600px (mobile) */
