@@ -260,5 +260,9 @@ img {
         display: none;
     }
 
+    .header-wrapper {
+        justify-content: center;
+    }
+
 
 }
