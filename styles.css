@@ -64,8 +64,6 @@ img {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure it's a block element to center it horizontally */
     margin: 0 auto; /* Center the image horizontally */
-    padding-top: 24px;
-    padding-bottom: 16px;
 }
 
 .calendar-item {
@@ -99,6 +97,17 @@ img {
     line-height: 24px;
     margin-top: 4px;
     color: #fff;
+}
+
+.header-caption {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 12px;
+    text-align: center;
+    color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
 }
 
 /* Apply a custom border color to the specific calendar item */
@@ -167,7 +176,8 @@ img {
     margin: 16px auto; /* Center align the text and set vertical margin */
     text-align: center;
     max-width: 1280px; /* Set a maximum width */
-    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .page-heading {
