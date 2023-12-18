@@ -97,7 +97,7 @@ img {
 
 .header-wrapper {
     display: flex;
-    padding: 32px 0; /* Remove horizontal padding and keep top and bottom padding */
+    padding: 16px 0; /* Remove horizontal padding and keep top and bottom padding */
     justify-content: space-between;
     align-items: center;
     gap: 48px;
